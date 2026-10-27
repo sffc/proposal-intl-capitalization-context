@@ -71,56 +71,32 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="untangling-terminology-one-word-six-operations">Untangling Terminology: One Word, Six Operations</h2>
-<p>Standards discussions often stall because <strong>&quot;capitalize&quot;</strong> and <strong>&quot;titlecase&quot;</strong> refer to six distinct operations:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Term</th>
-<th style="text-align:left">Precise Meaning</th>
-<th style="text-align:left">Example (<code>&quot;español de España&quot;</code>, <code>&quot;COVID-19&quot;</code>)</th>
-<th style="text-align:left">Web Platform Today</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>1. Character <code>Titlecase_Mapping</code> (<code>Lt</code>)</strong></td>
-<td style="text-align:left">Maps a single letter/digraph (<code>ǆ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>ǅ</code>, <code>ﬁ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>Fi</code>, <code>nl</code> <code>ij</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>IJ</code>, Georgian <code>ka</code> identity)</td>
-<td style="text-align:left"><code>&quot;ǆep&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;ǅep&quot;</code>, <code>&quot;თბილისი&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;თბილისი&quot;</code></td>
-<td style="text-align:left">Inside CSS <code>capitalize</code>; <strong>unreachable in JS</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>2. First-Word / Sentence Case (<code>titlecase-firstword</code>)</strong></td>
-<td style="text-align:left">Titlecases only the <strong>first word</strong> of a span; preserves trailing case (<code>TrailingCase::Unchanged</code>)</td>
-<td style="text-align:left"><code>&quot;Español de España&quot;</code>, <code>&quot;COVID-19&quot;</code></td>
-<td style="text-align:left"><strong>Missing in CSS (<code>#8893</code>) &amp; JS (<code>#294</code>)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>3. Start Case (Every-Word Capitalize)</strong></td>
-<td style="text-align:left">Titlecases <strong>every word</strong>; preserves trailing case (<code>U_TITLECASE_NO_LOWERCASE</code>)</td>
-<td style="text-align:left"><code>&quot;Español De España&quot;</code>, <code>&quot;COVID-19&quot;</code></td>
-<td style="text-align:left">CSS <code>text-transform: capitalize</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>4. Unicode R3 <code>toTitlecase(X)</code></strong></td>
-<td style="text-align:left">Titlecases every word <strong>and lowercases trailing letters</strong> (<code>TrailingCase::Lower</code>)</td>
-<td style="text-align:left"><code>&quot;Español De España&quot;</code>, <code>&quot;Covid-19&quot;</code>, <code>&quot;Mcdonald&quot;</code></td>
-<td style="text-align:left">ICU default; Angular <code>TitleCasePipe</code>; Python <code>.title()</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>5. Editorial Title Case</strong></td>
-<td style="text-align:left">Style-guide rules (AP / Chicago / APA) skipping minor words (<code>of</code>, <code>the</code>, <code>de</code>)</td>
-<td style="text-align:left"><code>&quot;The War of the Worlds&quot;</code></td>
-<td style="text-align:left">Userland libraries (style-guide-dependent, <code>#12526</code>)</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>6. Contextual Capitalization (<code>&lt;contextTransforms&gt;</code>)</strong></td>
-<td style="text-align:left">Applies <code>titlecase-firstword</code> or <code>no-change</code> based on <code>Locale × UI Context × Category</code></td>
-<td style="text-align:left"><code>es</code> menu: <code>&quot;Español de España&quot;</code>; <code>fr</code> menu month: <code>&quot;septembre&quot;</code></td>
-<td style="text-align:left">In CLDR &amp; ICU (<code>UDisplayContext</code>); <strong>unexposed in <code>Intl</code> (<code>#355</code>)</strong></td>
-</tr>
-</tbody>
-</table>
+<h2 id="three-real-world-casing-disasters-on-the-web-today">Three Real-World Casing Disasters on the Web Today</h2>
+<ol>
+<li>
+<p><strong>CSS <code>text-transform: capitalize</code> on Localized Dates &amp; UI (<code>FullCalendar</code>, <code>immich</code> 70k<img class="emoji" draggable="false" alt="⭐" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/2b50.svg" data-marp-twemoji=""/>):</strong></p>
+<ul>
+<li>Spanish date header: <code>&quot;lunes, 12 de enero de 2026&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Lunes, 12 De Enero De 2026&quot;</code></strong></li>
+<li>Russian calendar: <code>&quot;сентябрь 2026 г.&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Сентябрь 2026 Г.&quot;</code></strong></li>
+<li>Language picker: <code>&quot;español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Español De España&quot;</code></strong>; <code>&quot;srpski (latinica)&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Srpski (Latinica)&quot;</code></strong></li>
+</ul>
+</li>
+<li>
+<p><strong>JS <code>str.charAt(0).toUpperCase() + str.slice(1)</code> on Non-ASCII Scripts (100k+ GitHub files):</strong></p>
+<ul>
+<li><strong>Georgian (<code>ka</code>):</strong> <code>&quot;თბილისი&quot;</code> (<em>Tbilisi</em>) <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Თბილისი&quot;</code></strong> <em>(glues an ALL-CAPS Mtavruli capital onto lowercase Mkhedruli — Georgian does not capitalize words!)</em></li>
+<li><strong>Dutch (<code>nl</code>):</strong> <code>&quot;ijsland&quot;</code> (<em>Iceland</em>) <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ijsland&quot;</code></strong> <em>(misses the <code>&quot;IJ&quot;</code> digraph even with <code>toLocaleUpperCase('nl')</code>)</em></li>
+<li><strong>Adlam / Non-BMP DOM split:</strong> <code>&lt;span&gt;{str[0].toUpperCase()}&lt;/span&gt;{str.slice(1)}</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;𞤢𞤲𞤣&quot;</code></strong> <em>(tears UTF-16 surrogate pair into <code>U+FFFD U+FFFD</code>)</em></li>
+</ul>
+</li>
+<li>
+<p><strong>JS RegExp <code>\b\w</code> &amp; CSS Screen Reader Leaks (<code>Angular #23267</code>, <code>w3c/accname#239</code>):</strong></p>
+<ul>
+<li><code>str.replace(/\b\w/g, c =&gt; c.toUpperCase())</code>: <code>&quot;février&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;FéVrier&quot;</code></strong>; <code>&quot;éclair&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;éClair&quot;</code></strong>; <code>&quot;don't&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Don'T&quot;</code></strong> (<code>\b\w</code> is ASCII-only!)</li>
+<li><code>&lt;button style=&quot;text-transform: uppercase&quot;&gt;Call us&lt;/button&gt;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> Screen readers announce <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Call U.S.&quot;</code></strong></li>
+</ul>
+</li>
+</ol>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
@@ -152,38 +128,54 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="stepping-back-a-two-phase-pipeline-across-layers">Stepping Back: A Two-Phase Pipeline Across Layers</h2>
-<div class="columns">
-<div>
-<h3 id="phase-1-contextual--structural-decision">Phase 1: Contextual &amp; Structural Decision</h3>
-<p><em>Whether</em> and <em>which segments</em> to capitalize:</p>
-<ol>
-<li><strong>For CLDR Nouns (<code>Intl</code> Formatters):</strong><br />
-<code>Locale × UI Context × Category</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>titlecase-firstword</code> or <code>no-change</code>
-<ul>
-<li><em>Only <code>Intl</code> knows the lexical category</em> (<code>month</code> vs. <code>language</code> vs. <code>relative</code>).</li>
-</ul>
-</li>
-<li><strong>For UI Chrome &amp; Prose (CSS / HTML / App):</strong>
-<ul>
-<li><strong>First-word (<code>sentence</code>):</strong> Universal across bicameral scripts; Material Design UI.</li>
-<li><strong>Every-word (<code>capitalize</code>):</strong> English-style chrome (Apple HIG).</li>
-<li><strong>Editorial Title Case:</strong> Userland stop-word filtering via <code>Intl.Segmenter</code>.</li>
-</ul>
-</li>
-</ol>
-</div>
-<div>
-<h3 id="phase-2-segment-transform-execution">Phase 2: Segment Transform Execution</h3>
-<p><code>Span × Locale</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong>Titlecased Span</strong> <em>(shared by CSS, <code>Intl</code>, &amp; JS)</em>:</p>
-<ol>
-<li><strong>Leading Adjustment (<code>Auto</code>):</strong> Advance past <code>«</code>, <code>¿</code>, quotes, Bidi isolates <code>U+2068</code>; keep <code>&quot;49ers&quot;</code> &amp; Dutch <code>&quot;'s-Gravenhage&quot;</code> intact.</li>
-<li><strong>Unicode <code>Titlecase_Mapping</code> (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.486ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="2.106ex" role="img" focusable="false" viewBox="0 -716 778 931"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2260" d="M166 -215T159 -215T147 -212T141 -204T139 -197Q139 -190 144 -183L306 133H70Q56 140 56 153Q56 168 72 173H327L406 327H72Q56 332 56 347Q56 360 70 367H426Q597 702 602 707Q605 716 618 716Q625 716 630 712T636 703T638 696Q638 692 471 367H707Q722 359 722 347Q722 336 708 328L451 327L371 173H708Q722 163 722 153Q722 140 707 133H351Q175 -210 170 -212Q166 -215 159 -215Z"></path></g></g></g></svg></mjx-container> <code>Uppercase</code>):</strong> Surrogates, NFD combining marks, <code>ǆ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>ǅ</code>, <code>ﬁ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>Fi</code>, <strong>Georgian <code>ka</code> identity (no-op!)</strong>.</li>
-<li><strong>Locale Tailorings:</strong> Dutch <code>IJ</code>, Turkish <code>İ</code>, Greek initial <em>tonos</em> retention, Lithuanian dot removal, Irish <code>ga</code> prefixes.</li>
-<li><strong>Trailing Case (<code>Unchanged</code>):</strong> Preserve <code>&quot;MacDonald&quot;</code>, <code>&quot;iPhone&quot;</code>, <code>&quot;España&quot;</code>, <code>&quot;COVID-19&quot;</code>.</li>
-</ol>
-</div>
-</div>
+<h2 id="untangling-terminology">Untangling Terminology</h2>
+<p>Standards discussions often stall because <strong>&quot;capitalize&quot;</strong> and <strong>&quot;titlecase&quot;</strong> refer to one of several distinct operations:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Term</th>
+<th style="text-align:left">Precise Meaning</th>
+<th style="text-align:left">Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Character Titlecase Mapping</strong></td>
+<td style="text-align:left">Maps a single letter/digraph according to Unicode titlecase rules (<code>Lt</code>)</td>
+<td style="text-align:left"><code>ǆ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>ǅ</code>, <code>ﬁ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>Fi</code><br />Dutch <code>ij</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>IJ</code>, Georgian <code>ა</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>ა</code> (no-op)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>First-Letter Uppercase</strong></td>
+<td style="text-align:left">A broken, naive method (<code>s[0].toUpperCase() + s.slice(1)</code>) that many developers use to implement titlecasing</td>
+<td style="text-align:left"><code>&quot;ijsland&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <code>&quot;Ijsland&quot;</code><br /><code>&quot;თბილისი&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <code>&quot;Თბილისი&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>First-Word Titlecase</strong></td>
+<td style="text-align:left">Apply titlecase mapping to the first ~letter of a string (<code>titlecase-firstword</code>, trailing case unchanged)</td>
+<td style="text-align:left"><code>&quot;español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Español de España&quot;</code><br /><code>&quot;«bonjour»&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;«Bonjour»&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Sentence Case</strong></td>
+<td style="text-align:left">Same as First-Word Titlecase but applied to every sentence in a string</td>
+<td style="text-align:left"><code>&quot;hello world. ¡hola mundo!&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Hello world. ¡Hola mundo!&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Every-Word Titlecase</strong></td>
+<td style="text-align:left">Apply titlecase mapping to the first ~letter of every ~word in a string (CSS <code>capitalize</code>)</td>
+<td style="text-align:left"><code>&quot;español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Español De España&quot;</code><br /><code>&quot;out-of-the-box&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Out-Of-The-Box&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Editorial Title Case</strong></td>
+<td style="text-align:left">Same as Every-Word Titlecase but with style guide rules (AP / Chicago / APA) to skip stopwords (&quot;of&quot;, &quot;the&quot;, &quot;de&quot;)</td>
+<td style="text-align:left"><code>&quot;the war of the worlds&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;The War of the Worlds&quot;</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Contextual Capitalization</strong></td>
+<td style="text-align:left">Based on a <em>UI context</em> and <em>category</em>, choose the correct casing algorithm (<code>&lt;contextTransforms&gt;</code>)</td>
+<td style="text-align:left"><code>&quot;septembre&quot;</code> (<code>fr</code> month) <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Septembre&quot;</code> in calendar header, <code>&quot;septembre&quot;</code> in menu</td>
+</tr>
+</tbody>
+</table>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
@@ -215,24 +207,44 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="why-the-web-is-broken-today-gaps-at-every-layer">Why the Web Is Broken Today: Gaps at Every Layer</h2>
+<h2 id="state-in-the-web-platform">State in the Web Platform</h2>
 <div class="columns">
 <div>
-<h3 id="what-the-platform-provides">What the Platform Provides</h3>
+<h3 id="1-css--html">1. CSS &amp; HTML</h3>
 <ul>
-<li><strong>CSS (<code>text-transform</code>):</strong> Only has every-word <code>capitalize</code> (and block-only <code>::first-letter</code>). No <code>first-word</code> / <code>sentence</code> (<code>#8893</code>). Leaks into screen readers (<code>accname#239</code>) &amp; clipboard.</li>
-<li><strong>HTML (<code>autocapitalize</code> &amp; <code>lang</code>):</strong> <code>autocapitalize=&quot;none | sentences | words | characters&quot;</code> only hints mobile keyboards. <code>&lt;html lang&gt;</code> is used by CSS, <strong>but ignored by JS <code>toLocaleUpperCase()</code></strong> (which uses OS/browser locale!).</li>
-<li><strong>JS (<code>String</code> &amp; <code>Intl</code>):</strong> Only all-caps <code>toUpperCase()</code>. <strong>No titlecase primitive (<code>#294</code>)</strong> and <strong>no <code>Intl</code> <code>DisplayContext</code> (<code>#355</code>)</strong>.</li>
+<li><strong><code>text-transform: capitalize;</code></strong>
+<ul>
+<li>Applies <em>Every-Word Titlecase</em> (<code>U_TITLECASE_NO_LOWERCASE</code>) to all text.</li>
+<li><em>Stopwords (<code>CSS Text 3 §2.1</code>):</em> Word boundaries are UA-dependent (<code>UAX #29</code> suggested); spec notes <em>&quot;Authors cannot depend on <code>capitalize</code> to follow language-specific titlecasing conventions (such as skipping articles in English)&quot;</em> — <strong>no engine skips stopwords</strong>.</li>
+</ul>
+</li>
+<li><strong><code>::first-letter</code>:</strong> Block containers only (ignored on inline <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>).</li>
+<li><strong>HTML:</strong> <code>autocapitalize</code> only hints mobile virtual keyboards; <code>&lt;html lang&gt;</code> is used by CSS <strong>but ignored by JS <code>toLocaleUpperCase()</code></strong>.</li>
+<li><strong>Open CSS Issues:</strong>
+<ul>
+<li><a href="https://github.com/w3c/csswg-drafts/issues/8893">w3c/csswg-drafts#8893</a> — First-Word / Sentence Case</li>
+<li><a href="https://github.com/w3c/csswg-drafts/issues/12526">w3c/csswg-drafts#12526</a> — Editorial Title Case</li>
+</ul>
+</li>
 </ul>
 </div>
 <div>
-<h3 id="what-developers-do-instead">What Developers Do Instead</h3>
+<h3 id="2-javascript-string--intl">2. JavaScript (<code>String</code> &amp; <code>Intl</code>)</h3>
 <ul>
-<li><strong>1.7M+ CSS/TSX/Vue files</strong> apply <code>text-transform: capitalize</code> (<code>every-word</code> for all locales).</li>
-<li><strong>100,000+ GitHub files</strong> (and <strong>12,750+ <code>google3</code> files</strong>) hardcode:<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js">str.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>).<span class="hljs-title function_">toUpperCase</span>() + str.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>)
-</code></pre>
+<li><strong>No native support</strong> for titlecase mapping (<code>toUpperCase()</code> / <code>toLowerCase()</code> only).</li>
+<li><strong><code>Intl</code> formatters</strong> return a single default casing with <strong>no UI context option</strong>.</li>
+<li><strong>What developers do instead:</strong>
+<ul>
+<li><strong>100,000+ GitHub files</strong> (and <strong>12,750+ <code>google3</code> files</strong>) hardcode naive first-letter uppercase (<a href="https://stackoverflow.com/questions/1026069">SO #1026069</a>, <strong>4.7M+ views</strong>, baked into TypeScript <code>Capitalize&lt;S&gt;</code>, Vue, MUI, Angular, Closure).</li>
+<li><strong>1.7M+ CSS/TSX/Vue files</strong> apply <code>text-transform: capitalize</code>.</li>
+</ul>
 </li>
-<li><strong>Stack Overflow #1026069</strong>: <strong>4.7M+ views</strong>, baked into TypeScript <code>Capitalize&lt;S&gt;</code>, Vue, MUI, Angular, Closure, and recommended by FormatJS / Moment / date-fns maintainers.</li>
+<li><strong>Open JS / <code>Intl</code> Issues:</strong>
+<ul>
+<li><a href="https://github.com/tc39/ecma402/issues/294">tc39/ecma402#294</a> — Titlecase / Case Mapping in JS</li>
+<li><a href="https://github.com/tc39/ecma402/issues/355">tc39/ecma402#355</a> — Contextual Capitalization in <code>Intl</code></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -267,8 +279,8 @@ blockquote {
   font-size: 0.85em;
 }
 ;color:#ffffff;background-color:#2c3e50;background-image:none;" data-marpit-pagination-total="20">
-<h1 id="part-1-the-problem-statement">Part 1: The Problem Statement</h1>
-<h2 id="how-hardcoded-casing-breaks-the-web">How Hardcoded Casing Breaks the Web</h2>
+<h1 id="part-1-bugs--gaps-in-applying-titlecase">Part 1: Bugs &amp; Gaps in Applying Titlecase</h1>
+<h2 id="why-naive-js--css-workarounds-fail-across-scripts">Why Naive JS &amp; CSS Workarounds Fail Across Scripts</h2>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
@@ -300,36 +312,33 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="phase-1-problem-a-css-capitalize-forces-every-word-casing">Phase 1 Problem A: CSS <code>capitalize</code> Forces Every-Word Casing</h2>
-<p>In 1,000 CSS/Vue/TSX fragments studied, developers apply <code>text-transform: capitalize</code> to translated UI headings, weather descriptions, dates, and language pickers:</p>
+<h2 id="why-titlecase-first-letter-uppercase">Why Titlecase <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.486ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="2.106ex" role="img" focusable="false" viewBox="0 -716 778 931"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2260" d="M166 -215T159 -215T147 -212T141 -204T139 -197Q139 -190 144 -183L306 133H70Q56 140 56 153Q56 168 72 173H327L406 327H72Q56 332 56 347Q56 360 70 367H426Q597 702 602 707Q605 716 618 716Q625 716 630 712T636 703T638 696Q638 692 471 367H707Q722 359 722 347Q722 336 708 328L451 327L371 173H708Q722 163 722 153Q722 140 707 133H351Q175 -210 170 -212Q166 -215 159 -215Z"></path></g></g></g></svg></mjx-container> First-Letter Uppercase</h2>
 <div class="columns">
 <div>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-html"><span class="hljs-comment">&lt;!-- Real patterns in Vue / React / CSS --&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-capitalize&quot;</span>&gt;</span>
-  {{ $t(&#x27;homepage.our_services&#x27;) }}
-<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;capitalize&quot;</span>&gt;</span>
-  {{ weather.description }}
-<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;capitalize&quot;</span>&gt;</span>
-  {{ date.toLocaleDateString(&#x27;es-ES&#x27;, opts) }}
-<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-
-<span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-transform: capitalize&quot;</span>&gt;</span>
-  {{ displayNames.of(locale) }}
-<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<h3 id="how-developers-do-it-wrong-today">How Developers Do It Wrong Today</h3>
+<ul>
+<li><strong>In JavaScript (<code>100k+</code> GitHub files):</strong><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">// Slices UTF-16 code unit 0 and uppercases it:</span>
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">capitalize</span> = s =&gt;
+  s.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>).<span class="hljs-title function_">toUpperCase</span>() + s.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>);
 </code></pre>
+</li>
+<li><strong>In CSS (<code>::first-letter</code> hack):</strong><pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-css"><span class="hljs-comment">/* Ignored on inline &lt;span&gt;/&lt;a&gt; without inline-block! */</span>
+<span class="hljs-selector-class">.label</span> { <span class="hljs-attribute">display</span>: inline-block; }
+<span class="hljs-selector-class">.label</span><span class="hljs-selector-pseudo">::first-letter</span> {
+  <span class="hljs-attribute">text-transform</span>: uppercase;
+}
+</code></pre>
+</li>
+</ul>
 </div>
 <div>
-<p><strong>Even if <code>capitalize</code> skipped prepositions (<code>de</code>, <code>of</code>), every-word casing is wrong outside English headings:</strong></p>
-<ul>
-<li><strong>French heading:</strong> <code>&quot;nos services numériques&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Nos Services Numériques&quot;</code></strong> <em>(wants <code>&quot;Nos services numériques&quot;</code>)</em></li>
-<li><strong>Spanish/French weather (1,908 files):</strong> <code>&quot;cielo claro&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Cielo Claro&quot;</code></strong>; <code>&quot;ciel dégagé&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ciel Dégagé&quot;</code></strong></li>
-<li><strong>Dates (FullCalendar, Vue/TSX):</strong> <code>&quot;lunes, 12 de enero&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Lunes, 12 De Enero&quot;</code></strong>; <code>&quot;сентябрь 2026 г.&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Сентябрь 2026 Г.&quot;</code></strong></li>
-<li><strong>Language pickers (Svelte/Vue &amp; <code>immich</code>):</strong> <code>&quot;español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Español De España&quot;</code></strong>; <code>&quot;norsk bokmål&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Norsk Bokmål&quot;</code></strong></li>
-</ul>
+<h3 id="what-true-titlecase-mapping-actually-requires">What True Titlecase Mapping Actually Requires</h3>
+<ol>
+<li><strong>Leading Adjustment (<code>Auto</code>):</strong> Advance past <code>«</code>, <code>¿</code>, quotes, and Bidi isolates (<code>U+2068</code>); keep <code>&quot;49ers&quot;</code> &amp; Dutch <code>&quot;'s-Gravenhage&quot;</code> intact.</li>
+<li><strong>Unicode <code>Titlecase_Mapping</code> (<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.486ex;" xmlns="http://www.w3.org/2000/svg" width="1.76ex" height="2.106ex" role="img" focusable="false" viewBox="0 -716 778 931"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2260" d="M166 -215T159 -215T147 -212T141 -204T139 -197Q139 -190 144 -183L306 133H70Q56 140 56 153Q56 168 72 173H327L406 327H72Q56 332 56 347Q56 360 70 367H426Q597 702 602 707Q605 716 618 716Q625 716 630 712T636 703T638 696Q638 692 471 367H707Q722 359 722 347Q722 336 708 328L451 327L371 173H708Q722 163 722 153Q722 140 707 133H351Q175 -210 170 -212Q166 -215 159 -215Z"></path></g></g></g></svg></mjx-container> <code>Uppercase</code>):</strong> Code-point &amp; grapheme awareness (surrogates, NFD combining marks), digraphs (<code>ǆ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>ǅ</code>), ligatures (<code>ﬁ</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>Fi</code>), and <strong>Georgian <code>ka</code> identity (no-op!)</strong>.</li>
+<li><strong>Locale Tailorings:</strong> Dutch <code>ij</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>IJ</code>, Turkish <code>i</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>İ</code>, Greek initial <em>tonos</em> retention (<code>&quot;άνθρωπος&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Άνθρωπος&quot;</code>, whereas <code>uppercase</code> strips accents <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;ΑΝΘΡΩΠΟΣ&quot;</code>), Lithuanian dot removal, Irish <code>ga</code> prefixes.</li>
+<li><strong>Trailing Case (<code>Unchanged</code>):</strong> Preserve <code>&quot;MacDonald&quot;</code>, <code>&quot;iPhone&quot;</code>, <code>&quot;España&quot;</code>, <code>&quot;COVID-19&quot;</code>.</li>
+</ol>
 </div>
 </div>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
@@ -363,201 +372,8 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="phase-1-problem-b-unconditional-js-first-word-casing-ignores-contexttransforms">Phase 1 Problem B: Unconditional JS First-Word Casing Ignores <code>&lt;contextTransforms&gt;</code></h2>
-<p>Developers who notice CSS <code>capitalize</code> hits every word switch to JS (as Spanish devs noted in comments: <em>&quot;Con <code>capitalize</code> de CSS quedaba 'Septiembre De 2026'&quot;</em>) and hardcode <strong><code>titlecase-firstword</code> for every locale and UI slot</strong>:</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">// Found across dozens of GitHub calendar, datepicker, and i18n utilities:</span>
-<span class="hljs-keyword">function</span> <span class="hljs-title function_">formatMonthLabel</span>(<span class="hljs-params">date, locale</span>) {
-  <span class="hljs-keyword">const</span> s = date.<span class="hljs-title function_">toLocaleDateString</span>(locale, { <span class="hljs-attr">month</span>: <span class="hljs-string">&#x27;long&#x27;</span>, <span class="hljs-attr">year</span>: <span class="hljs-string">&#x27;numeric&#x27;</span> });
-  <span class="hljs-keyword">return</span> s.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>).<span class="hljs-title function_">toUpperCase</span>() + s.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>); <span class="hljs-comment">// <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> Runs for EVERY locale &amp; UI context!</span>
-}
-</code></pre>
-<p><strong>Why neither CSS nor unconditional JS can make the Phase 1 decision for CLDR nouns:</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Item &amp; UI Context</th>
-<th style="text-align:center">Spanish (<code>es</code>)</th>
-<th style="text-align:center">French (<code>fr</code>)</th>
-<th style="text-align:center">Czech (<code>cs</code>)</th>
-<th style="text-align:center">Swedish (<code>sv</code>) / Finnish (<code>fi</code>)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Month in Calendar Header (<code>stand-alone</code>)</strong></td>
-<td style="text-align:center"><code>Septiembre</code> (Cap)</td>
-<td style="text-align:center"><code>Septembre</code> (Cap)</td>
-<td style="text-align:center"><strong><code>září</code> (<code>no-change</code>)</strong></td>
-<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code> (<code>no-change</code>)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Month in <code>&lt;select&gt;</code> Menu (<code>uiListOrMenu</code>)</strong></td>
-<td style="text-align:center"><code>Septiembre</code> (Cap)</td>
-<td style="text-align:center"><strong><code>septembre</code> (<code>no-change</code>)</strong></td>
-<td style="text-align:center"><code>Září</code> (Cap)</td>
-<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code> (<code>no-change</code>)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Language in <code>&lt;select&gt;</code> Menu (<code>uiListOrMenu</code>)</strong></td>
-<td style="text-align:center"><code>Español</code> (Cap)</td>
-<td style="text-align:center"><code>Français</code> (Cap)</td>
-<td style="text-align:center"><code>Čeština</code> (Cap)</td>
-<td style="text-align:center"><code>Svenska</code> / <code>Suomi</code> (Cap)</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Language Standalone (<code>stand-alone</code>)</strong></td>
-<td style="text-align:center"><code>Español</code> (Cap)</td>
-<td style="text-align:center"><strong><code>français</code> (<code>no-change</code>)</strong></td>
-<td style="text-align:center"><code>Čeština</code> (Cap)</td>
-<td style="text-align:center"><code>Svenska</code> / <strong><code>suomi</code> (<code>no-change</code>)</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>In Running Text (<code>middle-of-sentence</code>)</strong></td>
-<td style="text-align:center"><strong><code>septiembre</code></strong></td>
-<td style="text-align:center"><strong><code>septembre</code></strong></td>
-<td style="text-align:center"><strong><code>září</code></strong></td>
-<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code></strong></td>
-</tr>
-</tbody>
-</table>
-<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-" lang="C" data-marpit-pagination="8" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-;" data-marpit-pagination-total="20">
-<h2 id="phase-1-problem-c-intl-leaves-browsers--locales-inconsistent-today">Phase 1 Problem C: <code>Intl</code> Leaves Browsers &amp; Locales Inconsistent Today</h2>
-<p>CLDR stores terms in <strong>middle-of-sentence</strong> form (<code>&quot;enero&quot;</code>, <code>&quot;janvier&quot;</code>, <code>&quot;español&quot;</code>, <code>&quot;русский&quot;</code>) and uses <code>&lt;contextTransforms&gt;</code> for UI contexts. Because <code>ECMA-402</code> has not exposed context (<code>ecma402#355</code>):</p>
-<div class="columns">
-<div>
-<h3 id="1-cross-browser-divergence-in-intldisplaynames">1. Cross-Browser Divergence in <code>Intl.DisplayNames</code></h3>
-<ul>
-<li><strong>V8 (Chrome):</strong> passes <code>UDISPCTX_CAPITALIZATION_NONE</code></li>
-<li><strong>SpiderMonkey (Firefox) &amp; JSC (Safari):</strong> pass <code>UDISPCTX_CAPITALIZATION_FOR_STANDALONE</code></li>
-</ul>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Intl</span>.<span class="hljs-title class_">DisplayNames</span>([<span class="hljs-string">&#x27;es&#x27;</span>], { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;language&#x27;</span> })
-  .<span class="hljs-title function_">of</span>(<span class="hljs-string">&#x27;es&#x27;</span>);
-<span class="hljs-comment">// Chrome:         &quot;español&quot; (lowercase)</span>
-<span class="hljs-comment">// Firefox/Safari: &quot;Español&quot; (Capitalized)</span>
-
-<span class="hljs-keyword">new</span> <span class="hljs-title class_">Intl</span>.<span class="hljs-title class_">DisplayNames</span>([<span class="hljs-string">&#x27;fr&#x27;</span>], { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;language&#x27;</span> })
-  .<span class="hljs-title function_">of</span>(<span class="hljs-string">&#x27;fr&#x27;</span>);
-<span class="hljs-comment">// ALL browsers:   &quot;français&quot; (lowercase!)</span>
-<span class="hljs-comment">// Why? CLDR &#x27;fr&#x27; (and &#x27;fi&#x27;, &#x27;da&#x27;) only capitalizes</span>
-<span class="hljs-comment">// languages in uiListOrMenu, not stand-alone!</span>
-</code></pre>
-</div>
-<div>
-<h3 id="2-real-world-pain-in-production-uis">2. Real-World Pain in Production UIs</h3>
-<ul>
-<li><strong>Perplexity Language Picker (<code>ecma402#355</code>):</strong><br />
-Across ~50 interface languages in Chrome, <code>Intl.DisplayNames</code> returns <strong>27 lowercase</strong> (<code>&quot;español&quot;</code>, <code>&quot;français&quot;</code>, <code>&quot;русский&quot;</code>, <code>&quot;polski&quot;</code>, <code>&quot;čeština&quot;</code>, <code>&quot;suomi&quot;</code>) and <strong>~23 capitalized</strong> (<code>&quot;English&quot;</code>, <code>&quot;Deutsch&quot;</code>, <code>&quot;Nederlands&quot;</code>, <code>&quot;Türkçe&quot;</code>).</li>
-<li><strong>Project Fluent (<code>fluent#299</code>) &amp; FormatJS (<code>#1527</code>):</strong><br />
-Maintainers declined to add custom casing filters, pointing to <code>ecma402#355</code> as the missing platform primitive.</li>
-</ul>
-</div>
-</div>
-<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-" lang="C" data-marpit-pagination="9" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-;" data-marpit-pagination-total="20">
-<h2 id="phase-1-problem-d-why-slice1tolowercase--name-normalization-fail">Phase 1 Problem D: Why <code>.slice(1).toLowerCase()</code> &amp; Name Normalization Fail</h2>
-<p>In 2,000+ lines of multilingual GitHub call sites studied (<code>nombre</code>, <code>prenom</code>, <code>nome</code>, <code>isim</code>, <code>imie</code>), <strong>person names</strong> are the <em>only</em> category where developers routinely lowercase the tail (0% of weather, error, month, or weekday sites lowercase the tail!):</p>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">// Mongoose pre-save hooks, Express handlers, Discord bots on GitHub:</span>
-<span class="hljs-keyword">const</span> <span class="hljs-title function_">normalizeName</span> = s =&gt; s.<span class="hljs-title function_">charAt</span>(<span class="hljs-number">0</span>).<span class="hljs-title function_">toUpperCase</span>() + s.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>).<span class="hljs-title function_">toLowerCase</span>();
-<span class="hljs-keyword">const</span> <span class="hljs-title function_">titleName</span> = s =&gt; s.<span class="hljs-title function_">toLowerCase</span>().<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27; &#x27;</span>).<span class="hljs-title function_">map</span>(normalizeName).<span class="hljs-title function_">join</span>(<span class="hljs-string">&#x27; &#x27;</span>);
-</code></pre>
-<ul>
-<li><strong>Compound &amp; hyphenated names:</strong> <code>&quot;maría josé&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;María josé&quot;</code></strong>; <code>&quot;jean-pierre&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Jean-pierre&quot;</code></strong></li>
-<li><strong>Particles &amp; internal caps:</strong> <code>&quot;DE LA CRUZ&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;De La Cruz&quot;</code></strong>; <code>&quot;van der Berg&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Van Der Berg&quot;</code></strong>; <code>&quot;McDonald&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Mcdonald&quot;</code></strong>; <code>&quot;O'Connor&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;O'connor&quot;</code></strong>; Dutch <code>&quot;'t Hooft&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;'t hooft&quot;</code></strong></li>
-<li><strong>Turkish &amp; acronyms:</strong> Turkish <code>&quot;IŞIK&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Işik&quot;</code></strong>; <code>&quot;ilayda&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ilayda&quot;</code></strong> (needs <code>&quot;İlayda&quot;</code>); Angular <code>TitleCasePipe</code> turns <code>&quot;COVID-19&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Covid-19&quot;</code></strong> (<code>angular#41420</code>)</li>
-<li><strong>Two lessons:</strong> (1) Never case-normalize person names (<code>no-change</code>; use UTS #35 Part 8 <code>initialPattern</code> for initials); (2) <strong>Default <code>trailingCase</code> in JS must be <code>'unchanged'</code></strong>!</li>
-</ul>
-<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-" lang="C" data-marpit-pagination="10" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-;" data-marpit-pagination-total="20">
-<h2 id="phase-2-problem-a-str0touppercase-is-not-titlecase">Phase 2 Problem A: <code>str[0].toUpperCase()</code> Is Not Titlecase</h2>
-<p>Even when <code>titlecase-firstword</code> <em>is</em> the right choice, <code>str[0].toUpperCase() + str.slice(1)</code> applies <strong><code>Uppercase_Mapping</code> to UTF-16 code unit 0</strong> instead of <strong><code>Titlecase_Mapping</code> to the first segment</strong>:</p>
+<h2 id="character--script-failures-str0touppercase-is-not-titlecase">Character &amp; Script Failures: <code>str[0].toUpperCase()</code> Is Not Titlecase</h2>
+<p><code>str[0].toUpperCase() + str.slice(1)</code> applies <strong><code>Uppercase_Mapping</code> to UTF-16 code unit 0</strong> instead of <strong><code>Titlecase_Mapping</code> to the first word</strong>:</p>
 <table>
 <thead>
 <tr>
@@ -615,6 +431,165 @@ blockquote {
 </table>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+" lang="C" data-marpit-pagination="8" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+;" data-marpit-pagination-total="20">
+<h2 id="surrogates-leading-punctuation-bw--trailing-case">Surrogates, Leading Punctuation, <code>\b\w</code>, &amp; Trailing Case</h2>
+<div class="columns">
+<div>
+<h3 id="1-surrogates-combining-marks--leading-punctuation">1. Surrogates, Combining Marks, &amp; Leading Punctuation</h3>
+<ul>
+<li><strong>UTF-16 Surrogates (9 bicameral scripts):</strong> In <strong>Adlam</strong> (<code>&quot;𞤢𞤤𞤢𞤲𞤣&quot;</code> <em>Sunday</em>), <strong>Deseret</strong>, <strong>Osage</strong>, <code>str[0]</code> is a lone high surrogate (<code>\uD83A</code>) — <code>.toUpperCase()</code> is a <strong>silent no-op</strong> (<code>camelcase#117</code>), and <code>&lt;span&gt;{str[0]}&lt;/span&gt;{str.slice(1)}</code> renders <code>U+FFFD</code>!</li>
+<li><strong>Lithuanian (<code>lt</code>) &amp; NFD:</strong> Slicing <code>str[0]</code> on <code>&quot;i\u0307\u0303&quot;</code> hides <code>\u0307</code>, leaving a double-dotted <strong><code>&quot;I\u0307\u0303&quot;</code></strong>.</li>
+<li><strong>Leading Punctuation &amp; Elisions:</strong> <code>&quot;¿cómo estás?&quot;</code>, <code>&quot;«bonjour»&quot;</code>, and <strong>Fluent</strong> Bidi isolates (<code>&quot;\u2068lundi\u2069&quot;</code>) fail at <code>str[0]</code>; naive <code>ToCased</code> corrupts <code>&quot;49ers&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;49Ers&quot;</code></strong> and Dutch <code>&quot;'s-Gravenhage&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;'S-Gravenhage&quot;</code></strong>.</li>
+</ul>
+</div>
+<div>
+<h3 id="2-regexp-bw--slice1tolowercase-bugs">2. RegExp <code>\b\w</code> &amp; <code>.slice(1).toLowerCase()</code> Bugs</h3>
+<ul>
+<li><strong>ASCII-Only RegExp (<code>str.replace(/\b\w/g, ...)</code>):</strong>
+<ul>
+<li><code>\b</code> and <code>\w</code> are <strong>strictly ASCII</strong> (<code>Angular #23267</code>):</li>
+<li><code>&quot;éclair&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;éClair&quot;</code></strong>; <code>&quot;février&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;FéVrier&quot;</code></strong></li>
+<li><code>&quot;FOGÃO&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;FogãO&quot;</code></strong>; <code>&quot;don't&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Don'T&quot;</code></strong></li>
+</ul>
+</li>
+<li><strong>Why <code>.slice(1).toLowerCase()</code> &amp; Name Normalization Fail:</strong>
+<ul>
+<li>Destroys <code>&quot;Español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;Español de españa&quot;</code></strong>, <code>&quot;COVID-19&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;Covid-19&quot;</code></strong> (<code>angular#41420</code>), <code>&quot;iPhone&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;Iphone&quot;</code></strong>.</li>
+<li>Corrupts person names (<code>&quot;maría josé&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;María josé&quot;</code>, <code>&quot;McDonald&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Mcdonald&quot;</code>, <code>&quot;van der Berg&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>&quot;Van Der Berg&quot;</code>).</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+" lang="C" data-marpit-pagination="9" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+;" data-marpit-pagination-total="20">
+<h2 id="css-gaps-every-word-over-casing-first-letter--leaks">CSS Gaps: Every-Word Over-Casing, <code>::first-letter</code>, &amp; Leaks</h2>
+<div class="columns">
+<div>
+<h3 id="1-text-transform-capitalize-forces-every-word-casing">1. <code>text-transform: capitalize</code> Forces Every-Word Casing</h3>
+<p>In 1,000 CSS/Vue/TSX fragments studied, <code>.capitalize</code> is applied to translated headings, weather, dates, and language pickers:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-capitalize&quot;</span>&gt;</span>{{ $t(&#x27;our_services&#x27;) }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;capitalize&quot;</span>&gt;</span>{{ weather.description }}<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;capitalize&quot;</span>&gt;</span>{{ date.toLocaleDateString(&#x27;es&#x27;) }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+</code></pre>
+<ul>
+<li><strong>French heading:</strong> <code>&quot;nos services numériques&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Nos Services Numériques&quot;</code></strong> <em>(wants <code>&quot;Nos services numériques&quot;</code>)</em></li>
+<li><strong>Spanish/French weather (1,908 files):</strong> <code>&quot;cielo claro&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Cielo Claro&quot;</code></strong>; <code>&quot;ciel dégagé&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ciel Dégagé&quot;</code></strong></li>
+<li><strong>Language pickers (<code>immich</code>):</strong> <code>&quot;español de España&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Español De España&quot;</code></strong>; <code>&quot;norsk bokmål&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Norsk Bokmål&quot;</code></strong></li>
+</ul>
+</div>
+<div>
+<h3 id="2-why-first-letter-fails--css-leaks">2. Why <code>::first-letter</code> Fails &amp; CSS Leaks</h3>
+<ul>
+<li><strong>Why <code>.label::first-letter</code> doesn't save us:</strong>
+<ul>
+<li><strong>Ignored on inline elements (<code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;label&gt;</code>)</strong> (<code>CSS Pseudo-Elements 4 §2.2</code>).</li>
+<li><code>::first-letter { text-transform: uppercase }</code> strips Greek initial <em>tonos</em> (<code>&quot;Άνθρωπος&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ανθρωπος&quot;</code></strong>) and applies Georgian Mtavruli (<code>&quot;Თბილისი&quot;</code>).</li>
+<li>Even <code>::first-letter { text-transform: capitalize }</code> fails in Blink on Dutch <code>&quot;ijsland&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong><code>&quot;Ijsland&quot;</code></strong> (<code>crbug.com/1172333</code>) and <code>&quot;«\u00A0bonjour&quot;</code> (<code>crbug.com/41270370</code>).</li>
+</ul>
+</li>
+<li><strong>Accessibility, Clipboard, &amp; Non-CSS Sinks:</strong>
+<ul>
+<li><strong>Screen readers (<code>w3c/accname#239</code>):</strong> <code>&lt;button style=&quot;text-transform: uppercase&quot;&gt;Call us&lt;/button&gt;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> announced as <strong>&quot;Call U.S.&quot;</strong></li>
+<li><strong>Clipboard &amp; <code>innerText</code> (<code>webkit.org/b/43202</code>):</strong> Mutates copied text.</li>
+<li><strong>Cannot reach:</strong> <code>&lt;title&gt;</code>, <code>&lt;option&gt;</code>, <code>aria-label</code>, <code>&lt;canvas&gt;</code>, <code>Notification</code>.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-class="lead" data-background-color="#2c3e50" data-color="#ffffff" data-theme="default" data-style=".columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+" lang="C" class="lead" data-marpit-pagination="10" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--class:lead;--background-color:#2c3e50;--color:#ffffff;--theme:default;--style:.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+;color:#ffffff;background-color:#2c3e50;background-image:none;" data-marpit-pagination-total="20">
+<h1 id="part-2-contextual-capitalization">Part 2: Contextual Capitalization</h1>
+<h2 id="even-with-a-good-titlecase-algorithm-when-should-you-apply-it">Even With a Good Titlecase Algorithm, <em>When</em> Should You Apply It?</h2>
+<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
+</section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -644,37 +619,38 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="phase-2-problem-b-surrogates-combining-marks-leading-adjustment--bw">Phase 2 Problem B: Surrogates, Combining Marks, Leading Adjustment, &amp; <code>\b\w</code></h2>
+<h2 id="capitalization-according-to-cldr-and-unicode">Capitalization According to CLDR and Unicode</h2>
 <div class="columns">
 <div>
-<h3 id="1-utf-16-surrogates-9-bicameral-scripts">1. UTF-16 Surrogates (9 Bicameral Scripts)</h3>
+<h3 id="phase-1-contextual-decision">Phase 1: Contextual Decision</h3>
+<p><strong>Input:</strong> Locale, UI Context, Lexical Category<br />
+<strong>Output:</strong> Algorithm Choice <em>(via CLDR <code>&lt;contextTransforms&gt;</code>)</em></p>
+<p><em>Example UI Contexts (<code>UTS #35</code> + UI):</em></p>
 <ul>
-<li>In <strong>Adlam</strong> (<code>&quot;𞤢𞤤𞤢𞤲𞤣&quot;</code> <em>Sunday</em>), <strong>Deseret</strong>, <strong>Osage</strong>, etc., <code>str[0]</code> is a lone high surrogate (<code>\uD83A</code>).</li>
-<li><code>&quot;\uD83A&quot;.toUpperCase()</code> is a <strong>silent no-op</strong> (<code>camelcase#117</code>)!</li>
-<li><code>&lt;span&gt;{str[0].toUpperCase()}&lt;/span&gt;{str.slice(1)}</code> tears surrogates across DOM nodes into <strong><code>U+FFFD U+FFFD</code></strong>.</li>
+<li><strong>Middle of sentence</strong> (<code>middle-of-sentence</code> — CLDR default)</li>
+<li><strong>Beginning of sentence</strong> (<code>beginning-of-sentence</code>)</li>
+<li><strong>Menu / list item</strong> (<code>uiListOrMenu</code>)</li>
+<li><strong>Standalone label / header</strong> (<code>stand-alone</code>)</li>
+<li><strong>Headline / Title</strong> (Editorial UI chrome)</li>
 </ul>
-<h3 id="2-leading-punctuation-bidi--elisions">2. Leading Punctuation, Bidi, &amp; Elisions</h3>
+<p><em>Example Lexical Categories:</em></p>
 <ul>
-<li>Spanish <code>&quot;¿cómo estás?&quot;</code>, French <code>&quot;«bonjour»&quot;</code>, and <strong>Fluent</strong> Bidi isolates (<code>&quot;\u2068lundi\u2069&quot;</code>) have a non-letter at <code>str[0]</code> — <strong>nothing is capitalized</strong>!</li>
-<li>Conversely, naive &quot;skip to first cased letter&quot; (<code>ToCased</code>) turns <code>&quot;49ers&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;49Ers&quot;</code></strong> and Dutch <code>&quot;'s-Gravenhage&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;'S-Gravenhage&quot;</code></strong>.</li>
+<li><strong>CLDR nouns:</strong> Month/day name, Language/region name, Relative date (<code>&quot;yesterday&quot;</code>), Currency/unit</li>
+<li><strong>Person name</strong> (Always <code>no-change</code>)</li>
+<li><strong>Prose / UI label</strong></li>
 </ul>
 </div>
 <div>
-<h3 id="3-lithuanian-lt--nfd-combining-marks">3. Lithuanian (<code>lt</code>) &amp; NFD Combining Marks</h3>
+<h3 id="phase-2-case-map-execution">Phase 2: Case Map Execution</h3>
+<p><strong>Input:</strong> Locale, String, Algorithm Choice<br />
+<strong>Output:</strong> Case-Mapped String <em>(Part 1!)</em></p>
+<p><em>Algorithm Choices:</em></p>
 <ul>
-<li>Slicing <code>str[0]</code> away from <code>str.slice(1)</code> on Lithuanian <code>&quot;i\u0307\u0303&quot;</code> hides <code>\u0307</code> from <code>toLocaleUpperCase('lt')</code>, leaving a double-dotted <strong><code>&quot;I\u0307\u0303&quot;</code></strong>; DOM-splitting NFD <code>&quot;e\u0301cole&quot;</code> renders a detached dotted circle <strong><code>E◌́cole</code></strong>.</li>
-</ul>
-<h3 id="4-ascii-only-regexp-bw-angular-23267">4. ASCII-Only RegExp <code>\b\w</code> (<code>Angular #23267</code>)</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js">str.<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/\b\w/g</span>, <span class="hljs-function"><span class="hljs-params">c</span> =&gt;</span> c.<span class="hljs-title function_">toUpperCase</span>())
-</code></pre>
-<ul>
-<li><code>\b</code> and <code>\w</code> are <strong>strictly ASCII</strong> (even with <code>/u</code>):
-<ul>
-<li><code>&quot;éclair&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;éClair&quot;</code></strong>; <code>&quot;février&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;FéVrier&quot;</code></strong></li>
-<li><code>&quot;FOGÃO&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;FogãO&quot;</code></strong>; <code>&quot;don't&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Don'T&quot;</code></strong></li>
-<li>Catalan <code>&quot;cancel·lar&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Cancel·Lar&quot;</code></strong></li>
-</ul>
-</li>
+<li><strong><code>no-change</code>:</strong> Leave string as-is <em>(mid-sentence, Swedish standalone months, French menu months, person names)</em></li>
+<li><strong><code>First-Word Titlecase</code> (<code>titlecase-firstword</code>):</strong> <code>ICU4X TitlecaseMapper::titlecase_segment</code> / <code>ICU4C U_TITLECASE_WHOLE_STRING</code> with <code>TrailingCase::Unchanged</code> &amp; <code>LeadingAdjustment::Auto</code> <em>(zero <code>BreakIterator</code> cost!)</em></li>
+<li><strong><code>Sentence Case</code>:</strong> First-Word Titlecase per <code>UAX #29</code> sentence</li>
+<li><strong><code>Every-Word Titlecase</code>:</strong> Titlecase per <code>UAX #29</code> word (CSS <code>capitalize</code>)</li>
+<li><strong><code>Editorial Title Case</code>:</strong> Every-Word Titlecase skipping stopwords (<code>of</code>, <code>the</code>, <code>de</code>)</li>
 </ul>
 </div>
 </div>
@@ -709,41 +685,66 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="phase-2-problem-c-why-css-first-letter--leaks-dont-save-us">Phase 2 Problem C: Why CSS <code>::first-letter</code> &amp; Leaks Don't Save Us</h2>
-<div class="columns">
-<div>
-<h3 id="why-labelfirst-letter-fails">Why <code>.label::first-letter</code> Fails</h3>
-<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-css"><span class="hljs-selector-class">.label</span><span class="hljs-selector-pseudo">::first-letter</span> {
-  <span class="hljs-attribute">text-transform</span>: uppercase; <span class="hljs-comment">/* or capitalize */</span>
+<h2 id="why-unconditional-first-word-casing-fails-contexttransforms">Why Unconditional First-Word Casing Fails (<code>&lt;contextTransforms&gt;</code>)</h2>
+<p>Developers who notice CSS <code>capitalize</code> hits every word switch to JS (as Spanish devs noted in comments: <em>&quot;Con <code>capitalize</code> de CSS quedaba 'Septiembre De 2026'&quot;</em>) and hardcode <strong>First-Word Casing for every locale and UI slot</strong>:</p>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">// Found across dozens of GitHub calendar, datepicker, and i18n utilities:</span>
+<span class="hljs-keyword">function</span> <span class="hljs-title function_">formatMonthLabel</span>(<span class="hljs-params">date, locale</span>) {
+  <span class="hljs-keyword">const</span> s = date.<span class="hljs-title function_">toLocaleDateString</span>(locale, { <span class="hljs-attr">month</span>: <span class="hljs-string">&#x27;long&#x27;</span>, <span class="hljs-attr">year</span>: <span class="hljs-string">&#x27;numeric&#x27;</span> });
+  <span class="hljs-keyword">return</span> <span class="hljs-title function_">capitalizeFirstWord</span>(s, locale); <span class="hljs-comment">// <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> Runs for EVERY locale &amp; UI context!</span>
 }
 </code></pre>
-<ol>
-<li><strong>Ignored on inline elements (<code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;label&gt;</code>):</strong> Only applies to block containers (<code>CSS Pseudo-Elements 4 §2.2</code>), forcing <code>display: inline-block</code> layout hacks (<code>SO #3961725</code>).</li>
-<li><strong>Greek (<code>lang=&quot;el&quot;</code>) <em>tonos</em> &amp; Georgian (<code>ka</code>) bug with <code>uppercase</code>:</strong> Tutorials prescribe <code>text-transform: uppercase</code>, which strips Greek initial <em>tonos</em> (<code>&quot;Άνθρωπος&quot;</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <img class="emoji" draggable="false" alt="❌" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@17.0.3/assets/svg/274c.svg" data-marp-twemoji=""/> <strong><code>&quot;Ανθρωπος&quot;</code></strong>) and applies Georgian Mtavruli (<code>&quot;Თბილისი&quot;</code>).</li>
-<li><strong>Even <code>::first-letter { text-transform: capitalize }</code> fails</strong> on inline boxes, Dutch <code>IJ</code> in Blink (<code>&quot;Ijsland&quot;</code>, <code>crbug.com/1172333</code>), and <code>«\u00A0Bonjour</code> (<code>crbug.com/41270370</code>).</li>
-</ol>
-</div>
-<div>
-<h3 id="leaks--unreachable-sinks">Leaks &amp; Unreachable Sinks</h3>
-<ul>
-<li><strong>Screen readers (<code>w3c/accname#239</code>, <code>csswg#10732</code>):</strong><br />
-<code>&lt;button style=&quot;text-transform: uppercase&quot;&gt;Call us&lt;/button&gt;</code> exposes transformed text to the Accessibility Tree and is announced as <strong>&quot;Call U.S.&quot;</strong></li>
-<li><strong>Clipboard &amp; <code>innerText</code> (<code>webkit.org/b/43202</code>):</strong><br />
-Safari still copies visually transformed text to the clipboard (Chrome fixed in v127); <code>innerText</code> mutates it by spec in all browsers.</li>
-<li><strong>Unreachable non-CSS sinks:</strong>
-<ul>
-<li><code>&lt;title&gt;</code> (<code>document.title</code>)</li>
-<li><code>&lt;option&gt;</code> (OS-native select popups)</li>
-<li><code>aria-label</code>, <code>alt</code>, <code>title</code> attributes</li>
-<li><code>&lt;canvas&gt;</code>, <code>new Notification()</code></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<p><strong>Why neither CSS (<code>text-transform: first-word</code>) nor unconditional JS can make the Phase 1 decision for <code>Intl</code> data:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Item &amp; UI Context</th>
+<th style="text-align:center">Spanish (<code>es</code>)</th>
+<th style="text-align:center">French (<code>fr</code>)</th>
+<th style="text-align:center">Czech (<code>cs</code>)</th>
+<th style="text-align:center">Swedish (<code>sv</code>) / Finnish (<code>fi</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Month in Calendar Header (<code>stand-alone</code>)</strong></td>
+<td style="text-align:center"><code>Septiembre</code> (Cap)</td>
+<td style="text-align:center"><code>Septembre</code> (Cap)</td>
+<td style="text-align:center"><strong><code>září</code> (<code>no-change</code>)</strong></td>
+<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code> (<code>no-change</code>)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Month in <code>&lt;select&gt;</code> Menu (<code>uiListOrMenu</code>)</strong></td>
+<td style="text-align:center"><code>Septiembre</code> (Cap)</td>
+<td style="text-align:center"><strong><code>septembre</code> (<code>no-change</code>)</strong></td>
+<td style="text-align:center"><code>Září</code> (Cap)</td>
+<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code> (<code>no-change</code>)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Language in <code>&lt;select&gt;</code> Menu (<code>uiListOrMenu</code>)</strong></td>
+<td style="text-align:center"><code>Español</code> (Cap)</td>
+<td style="text-align:center"><code>Français</code> (Cap)</td>
+<td style="text-align:center"><code>Čeština</code> (Cap)</td>
+<td style="text-align:center"><code>Svenska</code> / <code>Suomi</code> (Cap)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Language Standalone (<code>stand-alone</code>)</strong></td>
+<td style="text-align:center"><code>Español</code> (Cap)</td>
+<td style="text-align:center"><strong><code>français</code> (<code>no-change</code>)</strong></td>
+<td style="text-align:center"><code>Čeština</code> (Cap)</td>
+<td style="text-align:center"><code>Svenska</code> / <strong><code>suomi</code> (<code>no-change</code>)</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>In Running Text (<code>middle-of-sentence</code>)</strong></td>
+<td style="text-align:center"><strong><code>septiembre</code></strong></td>
+<td style="text-align:center"><strong><code>septembre</code></strong></td>
+<td style="text-align:center"><strong><code>září</code></strong></td>
+<td style="text-align:center"><strong><code>september</code> / <code>syyskuu</code></strong></td>
+</tr>
+</tbody>
+</table>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-class="lead" data-background-color="#2c3e50" data-color="#ffffff" data-theme="default" data-style=".columns {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
@@ -757,40 +758,7 @@ pre {
 blockquote {
   font-size: 0.85em;
 }
-" lang="C" class="lead" data-marpit-pagination="13" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--class:lead;--background-color:#2c3e50;--color:#ffffff;--theme:default;--style:.columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-;color:#ffffff;background-color:#2c3e50;background-image:none;" data-marpit-pagination-total="20">
-<h1 id="part-2-empirical-evidence--platform-design-space">Part 2: Empirical Evidence &amp; Platform Design Space</h1>
-<h2 id="aligning-css-intl-and-javascript-around-the-two-phases">Aligning CSS, <code>Intl</code>, and JavaScript Around the Two Phases</h2>
-<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
-</section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.5rem;
-}
-table {
-  font-size: 0.72em;
-}
-pre {
-  font-size: 0.72em;
-}
-blockquote {
-  font-size: 0.85em;
-}
-" lang="C" data-marpit-pagination="14" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
+" lang="C" data-marpit-pagination="13" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--theme:default;--style:.columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
@@ -805,47 +773,70 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="what-are-developers-actually-capitalizing-github-study">What Are Developers Actually Capitalizing? (GitHub Study)</h2>
-<p>Across <strong>563 classified JS hits</strong> (400 real call sites) + <strong>~190 localized <code>Intl</code> call sites</strong> + <strong>1,000 CSS <code>.capitalize</code> fragments</strong> + <strong>2,000+ multilingual human-text lines</strong>:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">What Is Being Capitalized</th>
-<th style="text-align:center">Share of JS Sample (+ CSS Usage)</th>
-<th style="text-align:left">What Phase 1 &amp; Phase 2 Operation They Actually Need</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><strong>Internal keys/enums/statuses <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> UI labels, chips, tabs, headers, &amp; translated strings (<code>$t('files')</code>)</strong></td>
-<td style="text-align:center"><strong>51% of JS hits</strong><br /><em>(+ 33% of Vue <code>$t()</code> <code>.capitalize</code>)</em></td>
-<td style="text-align:left"><strong>First-Word Transform (<code>titlecase-firstword</code>)</strong> in CSS (<code>text-transform: first-word</code>) or JS (<code>trailingCase: 'unchanged'</code>)</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>API/DB phrases (<code>weather[0].description</code>), Go/Rust <code>error.message</code> toasts, transcripts, MF2</strong></td>
-<td style="text-align:center"><strong>14.5% of JS hits</strong><br /><em>(1,908 weather + 106 error files; 0% lower tail!)</em></td>
-<td style="text-align:left"><strong>JS First-Word / Segment Primitive (<code>#294</code>)</strong> with <code>leadingAdjustment: 'auto'</code> &amp; <code>trailingCase: 'unchanged'</code></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong><code>Intl</code> / date-library outputs (<code>DateTimeFormat</code>, <code>DisplayNames</code>, <code>RelativeTimeFormat</code>)</strong></td>
-<td style="text-align:center"><strong>~1% random JS</strong><br /><em>(~10–15% TS file ceiling + ~25–30% of CSS date/calendar hits)</em></td>
-<td style="text-align:left"><strong>CLDR <code>&lt;contextTransforms&gt;</code> (<code>#355</code>)</strong> (<code>standalone</code>, <code>ui-list-or-menu</code>, <code>beginning-of-sentence</code>, <code>middle-of-sentence</code>) + <strong>CLDR data audit</strong></td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Person &amp; place names (<code>nombre</code>, <code>prenom</code>, <code>isim</code>)</strong></td>
-<td style="text-align:center"><strong>6.5% of JS hits</strong><br /><em>(only group using <code>.toLowerCase()</code>!)</em></td>
-<td style="text-align:left"><strong><code>no-change</code></strong> (do not case-normalize names; use UTS #35 Part 8 <code>initialPattern</code> for initials)</td>
-</tr>
-<tr>
-<td style="text-align:left"><strong>Code / identifier generation (<code>PascalCase</code>, <code>on${Key}</code>)</strong></td>
-<td style="text-align:center"><strong>26% of JS hits</strong></td>
-<td style="text-align:left">ASCII <code>s[0].toUpperCase() + s.slice(1)</code> <em>(locale-insensitive, already works)</em></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Key Takeaway:</strong> Neither <code>Intl</code> (<code>#355</code>), nor CSS (<code>#8893</code>), nor a JS primitive (<code>#294</code>) can solve this alone—each covers a distinct slice of the Web, and all three share the <strong>same Phase 2 execution</strong>.</p>
-</blockquote>
+<h2 id="how-intl-leaves-browsers--locales-inconsistent-today">How <code>Intl</code> Leaves Browsers &amp; Locales Inconsistent Today</h2>
+<p>CLDR stores terms in <strong>middle-of-sentence</strong> form (<code>&quot;enero&quot;</code>, <code>&quot;janvier&quot;</code>, <code>&quot;español&quot;</code>, <code>&quot;русский&quot;</code>) and uses <code>&lt;contextTransforms&gt;</code> (compiled in ICU to a tiny 2-bit flag vector per category) for UI contexts. Because <code>ECMA-402</code> has not exposed context (<code>ecma402#355</code>):</p>
+<div class="columns">
+<div>
+<h3 id="1-cross-browser-divergence-in-intldisplaynames">1. Cross-Browser Divergence in <code>Intl.DisplayNames</code></h3>
+<ul>
+<li><strong>V8 (Chrome):</strong> passes <code>UDISPCTX_CAPITALIZATION_NONE</code></li>
+<li><strong>SpiderMonkey (Firefox) &amp; JSC (Safari):</strong> pass <code>UDISPCTX_CAPITALIZATION_FOR_STANDALONE</code></li>
+</ul>
+<pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-keyword">new</span> <span class="hljs-title class_">Intl</span>.<span class="hljs-title class_">DisplayNames</span>([<span class="hljs-string">&#x27;es&#x27;</span>], { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;language&#x27;</span> })
+  .<span class="hljs-title function_">of</span>(<span class="hljs-string">&#x27;es&#x27;</span>);
+<span class="hljs-comment">// Chrome:         &quot;español&quot; (lowercase)</span>
+<span class="hljs-comment">// Firefox/Safari: &quot;Español&quot; (Capitalized)</span>
+
+<span class="hljs-keyword">new</span> <span class="hljs-title class_">Intl</span>.<span class="hljs-title class_">DisplayNames</span>([<span class="hljs-string">&#x27;fr&#x27;</span>], { <span class="hljs-attr">type</span>: <span class="hljs-string">&#x27;language&#x27;</span> })
+  .<span class="hljs-title function_">of</span>(<span class="hljs-string">&#x27;fr&#x27;</span>);
+<span class="hljs-comment">// ALL browsers:   &quot;français&quot; (lowercase!)</span>
+<span class="hljs-comment">// Why? CLDR &#x27;fr&#x27; (and &#x27;fi&#x27;, &#x27;da&#x27;) only capitalizes</span>
+<span class="hljs-comment">// languages in uiListOrMenu, not stand-alone!</span>
+</code></pre>
+</div>
+<div>
+<h3 id="2-real-world-pain-in-production-uis">2. Real-World Pain in Production UIs</h3>
+<ul>
+<li><strong>Perplexity Language Picker (<code>ecma402#355</code>):</strong><br />
+Across ~50 interface languages in Chrome, <code>Intl.DisplayNames</code> returns <strong>27 lowercase</strong> (<code>&quot;español&quot;</code>, <code>&quot;français&quot;</code>, <code>&quot;русский&quot;</code>, <code>&quot;polski&quot;</code>, <code>&quot;čeština&quot;</code>, <code>&quot;suomi&quot;</code>) and <strong>~23 capitalized</strong> (<code>&quot;English&quot;</code>, <code>&quot;Deutsch&quot;</code>, <code>&quot;Nederlands&quot;</code>, <code>&quot;Türkçe&quot;</code>).</li>
+<li><strong>Project Fluent (<code>fluent#299</code>) &amp; FormatJS (<code>#1527</code>):</strong><br />
+Maintainers declined to add custom casing filters, pointing to <code>ecma402#355</code> as the missing platform primitive.</li>
+</ul>
+</div>
+</div>
+<footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-class="lead" data-background-color="#2c3e50" data-color="#ffffff" data-theme="default" data-style=".columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+" lang="C" class="lead" data-marpit-pagination="14" style="--paginate:true;--footer:Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026;--class:lead;--background-color:#2c3e50;--color:#ffffff;--theme:default;--style:.columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+table {
+  font-size: 0.72em;
+}
+pre {
+  font-size: 0.72em;
+}
+blockquote {
+  font-size: 0.85em;
+}
+;color:#ffffff;background-color:#2c3e50;background-image:none;" data-marpit-pagination-total="20">
+<h1 id="part-3-empirical-call-site-study--cohesive-solutions">Part 3: Empirical Call-Site Study &amp; Cohesive Solutions</h1>
+<h2 id="matching-web-platform-layers-to-phase-1-and-phase-2">Matching Web Platform Layers to Phase 1 and Phase 2</h2>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
@@ -877,30 +868,47 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="how-cldr-icu4c-and-icu4x-model-the-two-phases">How CLDR, ICU4C, and ICU4X Model the Two Phases</h2>
-<div class="columns">
-<div>
-<h3 id="phase-1-cldr-contexttransforms-uts-35">Phase 1: CLDR <code>&lt;contextTransforms&gt;</code> (UTS #35)</h3>
-<ul>
-<li>Stores strings in <code>middle-of-sentence</code> form (capitalizing is lossless; lowercasing <code>&quot;Español de España&quot;</code> corrupts <code>&quot;España&quot;</code>).</li>
-<li>Maps <code>(locale, usage_category) × (uiListOrMenu | stand-alone | beginning-of-sentence)</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>titlecase-firstword</code> or <code>no-change</code>.</li>
-<li><strong>Tiny data footprint:</strong> Compiled in ICU to a 2-element vector <code>{ uiListOrMenu, standAlone }</code> per usage category (a few flags per locale, not megabytes of grammar data!).</li>
-</ul>
-</div>
-<div>
-<h3 id="phase-2-icu4x-titlecasemapper--icu4c">Phase 2: <code>ICU4X TitlecaseMapper</code> / <code>ICU4C</code></h3>
-<ul>
-<li><code>TitlecaseMapper::titlecase_segment</code> (<code>ICU4X</code>) / <code>U_TITLECASE_WHOLE_STRING</code> (<code>ICU4C</code>) executes on a single span with:
-<ul>
-<li><strong><code>TrailingCase::Unchanged</code></strong> (<code>U_TITLECASE_NO_LOWERCASE</code>)</li>
-<li><strong><code>LeadingAdjustment::Auto</code></strong> (skips <code>«</code>, <code>¿</code>, <code>U+2068</code>; keeps <code>&quot;49ers&quot;</code> and Dutch <code>&quot;'s-Gravenhage&quot;</code> / <code>&quot;'t Hooft&quot;</code> intact)</li>
-<li>Full <code>Titlecase_Mapping</code> + <code>nl</code>/<code>tr</code>/<code>el</code>/<code>lt</code>/<code>hy</code>/<code>ka</code> tailoring.</li>
-</ul>
-</li>
-<li><strong>Zero word-segmenter (<code>BreakIterator</code>) cost</strong> when applied to a single segment or the first word of a string!</li>
-</ul>
-</div>
-</div>
+<h2 id="what-are-developers-actually-capitalizing-github-study">What Are Developers Actually Capitalizing? (GitHub Study)</h2>
+<p>Across <strong>563 classified JS hits</strong> (400 real call sites) + <strong>~190 localized <code>Intl</code> call sites</strong> + <strong>1,000 CSS <code>.capitalize</code> fragments</strong> + <strong>2,000+ multilingual human-text lines</strong>:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">What Is Being Capitalized</th>
+<th style="text-align:center">Share of JS Sample (+ CSS Usage)</th>
+<th style="text-align:left">Which Phase &amp; Platform Primitive It Needs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Internal keys/enums/statuses <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> UI labels, chips, tabs, headers, &amp; translated strings (<code>$t('files')</code>)</strong></td>
+<td style="text-align:center"><strong>51% of JS hits</strong><br /><em>(+ 33% of Vue <code>$t()</code> <code>.capitalize</code>)</em></td>
+<td style="text-align:left"><strong>Phase 2 (<code>titlecase-firstword</code>):</strong> CSS <code>text-transform: first-word</code> (<code>#8893</code>) or JS (<code>#294</code>, <code>trailingCase: 'unchanged'</code>)</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>API/DB phrases (<code>weather[0].description</code>), Go/Rust <code>error.message</code> toasts, transcripts, MF2</strong></td>
+<td style="text-align:center"><strong>14.5% of JS hits</strong><br /><em>(1,908 weather + 106 error files; 0% lower tail!)</em></td>
+<td style="text-align:left"><strong>Phase 2 in JS (<code>#294</code>):</strong> Single-span capitalization with <code>leadingAdjustment: 'auto'</code> &amp; <code>trailingCase: 'unchanged'</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong><code>Intl</code> / date-library outputs (<code>DateTimeFormat</code>, <code>DisplayNames</code>, <code>RelativeTimeFormat</code>)</strong></td>
+<td style="text-align:center"><strong>~1% random JS</strong><br /><em>(~10–15% TS file ceiling + ~25–30% of CSS date/calendar hits)</em></td>
+<td style="text-align:left"><strong>Phase 1 + 2 in <code>Intl</code> (<code>#355</code>):</strong> CLDR <code>&lt;contextTransforms&gt;</code> (<code>standalone</code>, <code>ui-list-or-menu</code>, <code>beginning-of-sentence</code>) + <strong>CLDR data audit</strong></td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Person &amp; place names (<code>nombre</code>, <code>prenom</code>, <code>isim</code>)</strong></td>
+<td style="text-align:center"><strong>6.5% of JS hits</strong><br /><em>(only group using <code>.toLowerCase()</code>!)</em></td>
+<td style="text-align:left"><strong><code>no-change</code>:</strong> Do not case-normalize names; use UTS #35 Part 8 <code>initialPattern</code> (<code>Intl.PersonNames</code>) for initials</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Code / identifier generation (<code>PascalCase</code>, <code>on${Key}</code>)</strong></td>
+<td style="text-align:center"><strong>26% of JS hits</strong></td>
+<td style="text-align:left">ASCII <code>s[0].toUpperCase() + s.slice(1)</code> <em>(locale-insensitive, already works)</em></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Key Takeaway:</strong> Neither <code>Intl</code> (<code>#355</code>), nor CSS (<code>#8893</code>), nor a JS primitive (<code>#294</code>) can solve this alone—each covers a distinct slice of the Web, and all three share the <strong>same Phase 2 execution</strong>.</p>
+</blockquote>
 <footer>Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026</footer>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-footer="Capitalization, Titlecasing, and Presentational Case Mapping — W3C TPAC 2026" data-theme="default" data-style=".columns {
@@ -932,25 +940,25 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="solution-track-1-css-css-text--accessibility-alignment">Solution Track 1: CSS (<code>css-text</code>) &amp; Accessibility Alignment</h2>
+<h2 id="solution-track-1-css-css-text--accessibility-alignment-phase-2">Solution Track 1: CSS (<code>css-text</code>) &amp; Accessibility Alignment (Phase 2)</h2>
 <div class="columns">
 <div>
 <h3 id="1-standardize-text-transform-first-word--sentence-csswg-drafts8893">1. Standardize <code>text-transform: first-word</code> / <code>sentence</code> (<code>csswg-drafts#8893</code>)</h3>
 <ul>
-<li>Direct declarative primitive for <code>titlecase-firstword</code>:
+<li>Direct declarative primitive for <strong>First-Word Titlecase</strong> (<code>titlecase-firstword</code>):
 <ul>
 <li>Applies Unicode <code>Titlecase_Mapping</code> + <code>TrailingCase::Unchanged</code> + <code>LeadingAdjustment::Auto</code> to the first word of an element.</li>
 <li><strong>Works on inline elements (<code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;label&gt;</code>)</strong> as well as blocks — eliminating <code>display: inline-block</code> <code>::first-letter</code> hacks and Greek <em>tonos</em> / Georgian <em>Mtavruli</em> bugs.</li>
 <li>Replaces <code>.capitalize</code> on UI headings, chips, badges, and translated strings (<code>&quot;Nos services numériques&quot;</code>).</li>
 </ul>
 </li>
-<li><em>What about editorial Title Case (<code>#12526</code>)?</em> Stop words (<code>of</code>, <code>the</code>) are style-guide-specific (AP vs. Chicago); leave to userland or custom <code>@text-transform</code> (<code>#3132</code>).</li>
+<li><em>What about Editorial Title Case (<code>#12526</code>)?</em> Stop words (<code>of</code>, <code>the</code>) are style-guide-specific (AP vs. Chicago); leave to userland or custom <code>@text-transform</code> (<code>#3132</code>).</li>
 </ul>
 </div>
 <div>
 <h3 id="2-fix-tailoring-interop-perf--leaks">2. Fix Tailoring Interop, Perf, &amp; Leaks</h3>
 <ul>
-<li><strong>Shared segment fast-path:</strong> Avoid Blink's 4.3% Speedometer 3 regression (<code>crbug.com/420998400</code> when shipping Dutch <code>IJ</code> in <code>crbug.com/41248541</code>) by caching <code>BreakIterator</code> for <code>capitalize</code> and using zero-breaker segment titlecasing for <code>first-word</code>.</li>
+<li><strong>Shared segment fast-path:</strong> Avoid Blink's 4.3% Speedometer 3 regression (<code>crbug.com/420998400</code> when shipping Dutch <code>IJ</code> in <code>crbug.com/41248541</code>) by caching <code>BreakIterator</code> for <code>capitalize</code> and using zero-breaker segment titlecasing (<code>ICU4X titlecase_segment</code> / <code>ICU4C U_TITLECASE_WHOLE_STRING</code>) for <code>first-word</code>.</li>
 <li><strong>Language tailorings &amp; word boundaries:</strong> Align engines on Dutch <code>IJ</code>, Irish <code>ga</code> prefix mutations (<code>an t-uisce</code> <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <code>AN tUISCE</code>, currently Gecko-only), and UAX #29 word boundaries (<code>foo.bar</code>, <code>cancel·lar</code>).</li>
 <li><strong>Fix Accessibility &amp; Clipboard Leaks:</strong> Do not expose visual <code>text-transform</code> mutations to <code>accname</code> (<code>w3c/accname#239</code>) or Safari plain-text clipboard (<code>webkit.org/b/43202</code>).</li>
 </ul>
@@ -987,11 +995,11 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="solution-track-2-contextual-capitalization-in-intl-tc39ecma402355">Solution Track 2: Contextual Capitalization in <code>Intl</code> (<code>tc39/ecma402#355</code>)</h2>
+<h2 id="solution-track-2-contextual-capitalization-in-intl-355-phase-1--2">Solution Track 2: Contextual Capitalization in <code>Intl</code> (<code>#355</code>) (Phase 1 + 2)</h2>
 <div class="columns">
 <div>
 <h3 id="1-expose-capitalization-option-in-intl">1. Expose <code>capitalization</code> Option in <code>Intl</code></h3>
-<p>For CLDR nouns (<code>DateTimeFormat</code>, <code>DisplayNames</code>, <code>RelativeTimeFormat</code>), <strong>only <code>Intl</code> knows the lexical category</strong>:</p>
+<p>For CLDR nouns (<code>DateTimeFormat</code>, <code>DisplayNames</code>, <code>RelativeTimeFormat</code>), <strong>only <code>Intl</code> knows the lexical category</strong> needed for Phase 1:</p>
 <pre is="marp-pre" data-auto-scaling="downscale-only"><code class="language-js"><span class="hljs-comment">// Standalone calendar header:</span>
 <span class="hljs-keyword">new</span> <span class="hljs-title class_">Intl</span>.<span class="hljs-title class_">DateTimeFormat</span>(locale, {
   <span class="hljs-attr">month</span>: <span class="hljs-string">&#x27;long&#x27;</span>, <span class="hljs-attr">year</span>: <span class="hljs-string">&#x27;numeric&#x27;</span>,
@@ -1054,7 +1062,7 @@ blockquote {
   font-size: 0.85em;
 }
 ;" data-marpit-pagination-total="20">
-<h2 id="solution-track-3-js-case-mapping-building-block-tc39ecma402294">Solution Track 3: JS Case Mapping Building Block (<code>tc39/ecma402#294</code>)</h2>
+<h2 id="solution-track-3-js-case-mapping-building-block-294-phase-2">Solution Track 3: JS Case Mapping Building Block (<code>#294</code>) (Phase 2)</h2>
 <p>How do we fix the <strong>90%+ of JS call sites</strong> that transform non-<code>Intl</code> strings (weather/API text, error toasts, <code>&lt;title&gt;</code>, <code>&lt;option&gt;</code>, <code>aria-label</code>, MF2 messages) while addressing all TG2 vendor objections?</p>
 <div class="columns">
 <div>
